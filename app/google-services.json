@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "362865030983",
+    "project_id": "askidaiyilikproject",
+    "storage_bucket": "askidaiyilikproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362865030983:android:407012372254889760be62",
+        "android_client_info": {
+          "package_name": "org.askidaiyilik.newfrojectfromLumotion2022"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362865030983-mlacbsk19t5q471odtev739cbeudph7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrtJ5QKZswgN5p4bEKnmCYwLjjhlxT72k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362865030983-mlacbsk19t5q471odtev739cbeudph7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

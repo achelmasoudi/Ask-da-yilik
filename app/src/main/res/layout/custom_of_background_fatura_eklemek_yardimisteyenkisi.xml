@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10.5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="#000000"
+        android:layout_width="165dp"
+        android:layout_height="235dp">
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="230dp"
+            android:layout_marginStart="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginEnd="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:background="#FFFFFF">
+
+            <RelativeLayout
+                android:id="@+id/relativelayoutfaturatarihiDuzenleme"
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-1.7dp"
+                android:background="@drawable/background_of_fatura_tarihi">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_baseline_access_time_24_white" />
+
+                    <TextView
+                        android:id="@+id/faturaTarihiIdDuzenleme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center"
+                        android:text="04 NİSAN"
+                        android:textColor="#5721B6"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/faturaOdemeIdDuzenleme"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/relativelayoutfaturatarihiDuzenleme"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/fatura_odeme_icon" />
+
+            <TextView
+                android:id="@+id/faturafiyatiIdDuzenleme"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_below="@id/faturaOdemeIdDuzenleme"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/teko_medium"
+                android:gravity="center"
+                android:text="154.3 TL"
+                android:textColor="#5721B6"
+                android:textSize="33dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOfKALDIRid"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:text="Kaldır"
+                android:textSize="19dp"
+                android:layout_marginTop="2.5dp"
+                android:fontFamily="@font/teko_medium"
+                android:layout_gravity="center"
+                android:textColor="#FF1100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOfDUZENLEid"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2.5dp"
+                android:fontFamily="@font/teko_medium"
+                android:text="Düzenle"
+                android:textColor="#2196F3"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

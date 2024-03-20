@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="17dp"
+    android:layout_marginLeft="13.5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutOfAksaGazCustomId"
+        android:background="#000000"
+        android:layout_width="160dp"
+        android:layout_height="230dp">
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="230dp"
+            android:layout_marginStart="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginEnd="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:background="#FFFFFF">
+
+            <RelativeLayout
+                android:id="@+id/relativelayoutfaturatarihi"
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-1.7dp"
+                android:background="@drawable/background_of_fatura_tarihi">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/tarih_icon_of_fatura" />
+
+                    <TextView
+                        android:id="@+id/faturaTarihiId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center"
+                        android:text="04 NİSAN"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/faturaOdemeId"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_below="@id/relativelayoutfaturatarihi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/fatura_odeme_icon" />
+
+            <TextView
+                android:id="@+id/faturafiyatiId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/simdiOdeBottonId"
+                android:layout_below="@id/faturaOdemeId"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/teko_medium"
+                android:gravity="center"
+                android:text="154.3 TL"
+                android:textColor="#5721B6"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/simdiOdeBottonId"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_of_send_btn_in_forgot_pass"
+                android:fontFamily="@font/teko_semibold"
+                android:gravity="center"
+                android:text="ŞİMDİ ÖDE"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

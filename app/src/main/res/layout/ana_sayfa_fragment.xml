@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewOfAskidaFGuncelDurum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/odibee_sans"
+        android:gravity="center"
+        android:text="Askıda Fatura Güncel Durum"
+        android:textColor="#110624"
+        android:textSize="35dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/textViewOfAskidaFGuncelDurum"
+            android:background="#5721B6" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="37dp"
+            android:layout_toRightOf="@id/textViewOfAskidaFGuncelDurum"
+            android:background="#5721B6" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutAskidanAlinanFaturaId"
+            android:layout_width="match_parent"
+            android:background="@drawable/background_custom_of_cardview_askidafaturagunceldurum"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@id/textViewOfAskidaFGuncelDurum"
+            android:layout_height="95dp">
+            <androidx.cardview.widget.CardView
+                android:layout_margin="1.5dp"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="95dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewOfAskidanAlinanFaturaId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@id/imageViewOfAskidanAlinanFaturaId"
+                        android:fontFamily="@font/teko_medium"
+                        android:gravity="center"
+                        android:text="Askıdan Alınan Fatura"
+                        android:textColor="#110624"
+                        android:textSize="28dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewOfAskidanAlinanFaturaId"
+                        android:layout_width="100dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/handshake_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/textViewOfAskidanAlinanFaturaId"
+                        android:layout_toLeftOf="@id/imageViewOfAskidanAlinanFaturaId"
+                        android:fontFamily="@font/odibee_sans"
+                        android:gravity="center"
+                        android:text="6.523"
+                        android:textColor="#5721B6"
+                        android:textSize="40dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutAskidanBekleyenFaturaId"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/background_custom_of_cardview_askidafaturagunceldurum"
+            android:layout_below="@id/RelativeLayoutAskidanAlinanFaturaId"
+            android:layout_height="95dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_margin="1.5dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewOfAskidanBekleyenFaturaId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@id/imageViewOfAskidanBekleyenFaturaId"
+                        android:fontFamily="@font/teko_medium"
+                        android:gravity="center"
+                        android:text="Askıda Bekleyen Fatura"
+                        android:textColor="#110624"
+                        android:textSize="28dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewOfAskidanBekleyenFaturaId"
+                        android:layout_width="100dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/heart_hand_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/textViewOfAskidanBekleyenFaturaId"
+                        android:layout_toLeftOf="@id/imageViewOfAskidanBekleyenFaturaId"
+                        android:fontFamily="@font/odibee_sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="257"
+                        android:textColor="#5721B6"
+                        android:textSize="40dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutToplamOdenenId"
+            android:layout_below="@id/RelativeLayoutAskidanBekleyenFaturaId"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/background_custom_of_cardview_askidafaturagunceldurum"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_height="95dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="1.5dp"
+                android:layout_height="95dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewOfToplamOdenenFaturaId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@id/imageViewToplamOdenenFaturaId"
+                        android:fontFamily="@font/teko_medium"
+                        android:gravity="center"
+                        android:text="Toplam Ödenen Tutar"
+                        android:textColor="#110624"
+                        android:textSize="28dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewToplamOdenenFaturaId"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/lira_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/textViewOfToplamOdenenFaturaId"
+                        android:layout_toLeftOf="@id/imageViewToplamOdenenFaturaId"
+                        android:fontFamily="@font/odibee_sans"
+                        android:gravity="center"
+                        android:text="259.182"
+                        android:textColor="#5721B6"
+                        android:textSize="40dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/FaturaAl_Id"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/RelativeLayoutToplamOdenenId"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#5721B6"
+            app:cardCornerRadius="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageOfFaturaAl"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="30dp"
+                    android:paddingTop="7dp"
+                    android:src="@drawable/fatura_al_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@id/imageOfFaturaAl"
+                    android:fontFamily="@font/aclonica"
+                    android:gravity="center"
+                    android:text="ASKIDAKİ FATURALAR"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

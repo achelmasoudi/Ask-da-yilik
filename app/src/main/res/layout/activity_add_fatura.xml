@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dataOfYardimIsteyenKisi.AddFatura">
+
+    <TextView
+        android:id="@+id/faturaEkleyiniz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/odibee_sans"
+        android:gravity="center"
+        android:text="Fatura Ekle"
+        android:textColor="#110624"
+        android:textSize="40dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@id/faturaEkleyiniz"
+        android:background="#5721B6" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="41dp"
+        android:layout_toRightOf="@id/faturaEkleyiniz"
+        android:background="#5721B6" />
+
+    <RelativeLayout
+        android:layout_below="@id/faturaEkleyiniz"
+        android:id="@+id/gaz_relativelayoutIdFaturaEkle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <RelativeLayout
+            android:id="@+id/aksagazRelativeLayoutIdFaturaEkle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_of_su_gaz_elektrik"
+            android:backgroundTint="#5721B6">
+
+            <TextView
+                android:id="@+id/textViewOfTypeOfkurumuFaturaEkle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/teko_semibold"
+                android:text="AKSA GAZ"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewOfTypeOfkurumuFaturaEkle"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/gaz_icon" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/faturaNumarasiId"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gaz_relativelayoutIdFaturaEkle"
+        android:layout_marginTop="45dp"
+        android:hint="Fatura Numarası"
+        app:endIconMode="clear_text"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sozlesmeNumarasiId"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Sözleşme Numarası"
+        android:layout_below="@id/faturaNumarasiId"
+        app:endIconMode="clear_text"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/ekleFaturaButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/background_of_send_btn_in_forgot_pass"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Ekle"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

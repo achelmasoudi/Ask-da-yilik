@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaturaOdemek">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayoutOfImagesOflumotionAndAskidaIyilikId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/lumotion_logo"
+            android:layout_gravity="center_vertical"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <View
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="#5721B6"
+            android:layout_width="3dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="75dp"/>
+        <ImageView
+            android:src="@drawable/askida_iyilik_logo_siyah"
+            android:layout_width="85dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="85dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/faturafiyatiOdemekActivityId"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@id/linearLayoutOfImagesOflumotionAndAskidaIyilikId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/teko_medium"
+        android:gravity="center"
+        android:text="203.33 TL"
+        android:textColor="#5721B6"
+        android:textSize="50dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kartNoId"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/faturafiyatiOdemekActivityId"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        app:endIconMode="clear_text"
+        android:layout_marginRight="15dp"
+        android:hint="Kart Numarası"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLength="16"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kartSahibininadiId"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/kartNoId"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        app:endIconMode="clear_text"
+        android:layout_marginRight="15dp"
+        android:hint="Kart Sahibinin Adı"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLength="16"
+            android:inputType="textPersonName"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sonKullanmatarihi"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/kartSahibininadiId"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        app:endIconMode="clear_text"
+        android:layout_marginRight="15dp"
+        android:hint="Son Kullanma Tarihi ( 01/22 )"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLength="5"
+            android:inputType="number|textCapCharacters"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CVC2Id"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/sonKullanmatarihi"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        app:endIconMode="clear_text"
+        android:layout_marginRight="15dp"
+        android:hint="CVC2"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLength="3"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/vazgecButtonId"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bazgec_button"
+            android:fontFamily="@font/teko_semibold"
+            android:text="Vazgeç"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="19dp" />
+
+        <Button
+            android:id="@+id/odemeTamamlaButtonId"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:background="@drawable/odemeyi_tamamla_button"
+            android:fontFamily="@font/teko_semibold"
+            android:text="Ödemeyi Tamamla"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="19dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

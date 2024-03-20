@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abhaya_libre_semibold</item>
+        <item>@font/aclonica</item>
+        <item>@font/aladin</item>
+        <item>@font/aldrich</item>
+        <item>@font/alegreya_bold</item>
+        <item>@font/amarante</item>
+        <item>@font/amaranth</item>
+        <item>@font/amita_bold</item>
+        <item>@font/autour_one</item>
+        <item>@font/cairo</item>
+        <item>@font/corben</item>
+        <item>@font/graduate</item>
+        <item>@font/maiden_orange</item>
+        <item>@font/odibee_sans</item>
+        <item>@font/oswald</item>
+        <item>@font/oswald_extralight</item>
+        <item>@font/roboto_slab</item>
+        <item>@font/roboto_slab_bold</item>
+        <item>@font/roboto_slab_light</item>
+        <item>@font/roboto_slab_thin</item>
+        <item>@font/rubik</item>
+        <item>@font/rubik_medium</item>
+        <item>@font/rum_raisin</item>
+        <item>@font/teko_bold</item>
+        <item>@font/teko_medium</item>
+        <item>@font/teko_semibold</item>
+        <item>@font/titillium_web_semibold</item>
+    </array>
+</resources>

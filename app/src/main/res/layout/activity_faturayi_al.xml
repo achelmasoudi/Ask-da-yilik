@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5721B6"
+    tools:context=".FaturayiAlActivity">
+
+    <TextView
+        android:id="@+id/kurumusecId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/odibee_sans"
+        android:text="Lütfen Kurumu Seç"
+        android:textColor="@color/white"
+        android:textSize="37dp" />
+
+    <RelativeLayout
+        android:layout_below="@id/kurumusecId"
+        android:id="@+id/gaz_relativelayoutId"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <RelativeLayout
+            android:id="@+id/aksagazRelativeLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_of_su_gaz_elektrik"
+            android:backgroundTint="#E6AC27">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/teko_semibold"
+                android:text="AKSA GAZ"
+                android:textColor="@color/black"
+                android:textSize="50dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/gaz_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/su_relativelayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/gaz_relativelayoutId"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp">
+
+        <RelativeLayout
+            android:id="@+id/elazigsuRelativeLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_of_su_gaz_elektrik"
+            android:backgroundTint="#d4f1f9">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/teko_semibold"
+                android:text="ELAZIĞ SU"
+                android:textColor="@color/black"
+                android:textSize="50dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/su_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/elektrik_relativelayoutId"
+        android:layout_below="@id/su_relativelayoutId"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <RelativeLayout
+            android:id="@+id/firatedasRelativeLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_of_su_gaz_elektrik"
+            android:backgroundTint="#FFFF33">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/teko_semibold"
+                android:text="FIRAT EDAŞ"
+                android:textColor="@color/black"
+                android:textSize="50dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/elektrik_icon" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

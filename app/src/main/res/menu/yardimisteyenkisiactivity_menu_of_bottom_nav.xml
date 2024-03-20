@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/BottomNavigation_Items_FaturalarimId"
+        android:title="Faturalarım"
+        app:showAsAction="always"
+        android:icon="@drawable/faturalar_selection_of_bottom_navigation"
+        />
+
+    <item android:id="@+id/placeholder"
+        android:title=""/>
+
+    <item android:id="@+id/BottomNavigation_Items_ProfilimId"
+        android:title="Profilim"
+        app:showAsAction="always"
+        android:icon="@drawable/profilim_selection_of_bottom_navigation"
+        />
+
+</menu>

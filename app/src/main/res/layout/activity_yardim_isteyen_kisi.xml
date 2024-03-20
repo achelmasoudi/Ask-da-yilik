@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".YardimIsteyenKisiActivity">
+
+    <FrameLayout
+        android:layout_marginBottom="60dp"
+        android:id="@+id/fragment_container_Id_Of_YardimIsteyen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottomAppBarForYardimIsteyenActivity"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:background="@drawable/transparent_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomNavForYardimIsteyenActivity"
+            android:layout_marginRight="17dp"
+            app:itemTextColor="#5721B6"
+            app:itemIconTint="@drawable/bottom_navigation_items_color"
+            app:menu="@menu/yardimisteyenkisiactivity_menu_of_bottom_nav"/>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floatingActionBar"
+        android:src="@drawable/add_icon"
+        android:backgroundTint="#5721B6"
+        app:maxImageSize="38dp"
+        app:layout_anchor="@id/bottomAppBarForYardimIsteyenActivity"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
