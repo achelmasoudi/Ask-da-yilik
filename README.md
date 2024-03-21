@@ -3,7 +3,7 @@
             <img src="https://github.com/achelmasoudi/Askida_Iyilik/assets/154275618/105941bc-45f8-49c0-8967-f663bc7fec71" width="150px"  align="left">
             <img src="https://github.com/achelmasoudi/Askida_Iyilik/assets/154275618/e99e4d96-5486-4888-aa42-c77e5dc7dd06" width="150px" align="right" >
             <br/>
-            Askıda İyilik
+            Askıda İyilik - Suspended Goodness
             <br/> 
       </h1>
 </div>
